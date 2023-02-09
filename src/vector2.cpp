@@ -4,7 +4,7 @@ nothing (default)
 #define VECTOR2_FLOAT
 #define VECTOR2_DOUBLE 
 #define VECTOR2_LONGDOUBLE
-#define VECTOR2_CUSTOM requires def [VECTOR2_CUSTOM_FLOOR,]
+#define VECTOR2_CUSTOM requires def [VECTOR2_CUSTOM_FLOOR,VECTOR2_CUSTOM_ROUND,VECTOR2_CUSTOM_CEIL,VECTOR2_CUSTOM_SQRT]
 */
 template<typename componentT>
 vector2<componentT>::vector2()

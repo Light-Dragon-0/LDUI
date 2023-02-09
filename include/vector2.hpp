@@ -4,10 +4,10 @@ template<typename componentT>
 class vector2
 {
 public:
-	componentT x;
-	componentT y;
+    componentT x;
+    componentT y;
     vector2();
-	vector2(componentT value);
+    vector2(componentT value);
     vector2(componentT x,componentT y); 
     vector2(vector2& copy);
     vector2 add(vector2& b);
@@ -97,7 +97,6 @@ public:
     static bool equals(vector2& a,componentT b);
     bool any_equals(componentT b);
     static bool any_equals(vector2& a,componentT b);
-
     bool isLargerThan_l(vector2& b);
     bool operator>(vector2& b);
     static bool isLargerThan_l(vector2& a,vector2& b);
@@ -109,7 +108,5 @@ public:
     static bool isSmallerThan_l(vector2& a,vector2& b);
     bool isSmallerThanOrEqual_l(vector2& b);
     bool operator<=(vector2& b);
-    static bool isSmallerThanOrEqual_l(vector2& a,vector2& b);
-    
-    
+    static bool isSmallerThanOrEqual_l(vector2& a,vector2& b);  
 };
