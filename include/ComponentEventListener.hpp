@@ -1,5 +1,11 @@
 /*
-Location Specific Events
-Value Specific Events
-Location & Value Specific Events
+Event(SenderObject sender)
+
+sender :
+    - Sender Identifier (for example Keyboard-{Serial Number})
+    - Data Sent
+
+
+
 */
+

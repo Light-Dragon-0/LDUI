@@ -1,14 +1,14 @@
 #include <math.h>
 
-template<typename componentT>
+template<typename numericT>
 class vector2
 {
 public:
-    componentT x;
-    componentT y;
+    numericT x;
+    numericT y;
     vector2();
-    vector2(componentT value);
-    vector2(componentT x,componentT y); 
+    vector2(numericT value);
+    vector2(numericT x,numericT y); 
     vector2(vector2& copy);
     vector2 add(vector2& b);
     void add_eq(vector2& b);
@@ -51,18 +51,18 @@ public:
     vector2 max_l(vector2& b); //returns the vector with max length
     void max_l_eq(vector2& b);
     static vector2 max_l(vector2& a,vector2& b);
-    componentT length(vector2& b);
+    numericT length(vector2& b);
     void length_c_eq(vector2& b);
-    static componentT length(vector2& a,vector2& b);
-    componentT det();
+    static numericT length(vector2& a,vector2& b);
+    numericT det();
     void det_c_eq();
-    static componentT det(vector2& a);
+    static numericT det(vector2& a);
     vector2 normal();
     static vector2 normal(vector2& a);
     void normalize();
-    componentT dot(vector2& b);
+    numericT dot(vector2& b);
     void dot_c_eq(vector2& b);
-    static componentT dot(vector2& a,vector2& b);
+    static numericT dot(vector2& a,vector2& b);
     void operator=(vector2& a);
     bool equals(vector2& b);
     static bool equals(vector2& a,vector2& b);
@@ -70,33 +70,33 @@ public:
     static bool any_equals(vector2& a,vector2& b);
     bool equals_l(vector2& a);
     static bool equals_l(vector2& a,vector2& b);
-    vector2 add(componentT b);
-    void add_eq(componentT b);
-    static vector2 add(vector2& a,componentT b);
-    vector2 operator+(componentT b);
-    void operator+=(componentT b);
-    vector2 sub(componentT b);
-    void sub_eq(componentT b);
-    static vector2 sub(vector2& a,componentT b);
-    vector2 operator-(componentT b);
-    void operator-=(componentT b);
-    vector2 mul(componentT b);
-    void mul_eq(componentT b);
-    static vector2 mul(vector2& a,componentT b);
-    vector2 operator*(componentT b);
-    void operator*=(componentT b);
-    vector2 div(componentT b);
-    void div_eq(componentT b);
-    static vector2 div(vector2& a,componentT b);
-    vector2 operator/(componentT b);
-    void operator/=(componentT b);
-    componentT length(componentT b);
-    void length_c_eq(componentT b);
-    void operator=(componentT& a);
-    bool equals(componentT b);
-    static bool equals(vector2& a,componentT b);
-    bool any_equals(componentT b);
-    static bool any_equals(vector2& a,componentT b);
+    vector2 add(numericT b);
+    void add_eq(numericT b);
+    static vector2 add(vector2& a,numericT b);
+    vector2 operator+(numericT b);
+    void operator+=(numericT b);
+    vector2 sub(numericT b);
+    void sub_eq(numericT b);
+    static vector2 sub(vector2& a,numericT b);
+    vector2 operator-(numericT b);
+    void operator-=(numericT b);
+    vector2 mul(numericT b);
+    void mul_eq(numericT b);
+    static vector2 mul(vector2& a,numericT b);
+    vector2 operator*(numericT b);
+    void operator*=(numericT b);
+    vector2 div(numericT b);
+    void div_eq(numericT b);
+    static vector2 div(vector2& a,numericT b);
+    vector2 operator/(numericT b);
+    void operator/=(numericT b);
+    numericT length(numericT b);
+    void length_c_eq(numericT b);
+    void operator=(numericT& a);
+    bool equals(numericT b);
+    static bool equals(vector2& a,numericT b);
+    bool any_equals(numericT b);
+    static bool any_equals(vector2& a,numericT b);
     bool isLargerThan_l(vector2& b);
     bool operator>(vector2& b);
     static bool isLargerThan_l(vector2& a,vector2& b);

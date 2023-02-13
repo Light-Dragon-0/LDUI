@@ -4,7 +4,6 @@ class Image
 {
 public:
     Bitmap* bitmap;
-    Image* fromBitmap();
-    Image* fromFile();
-
+    static Image* fromBitmap();
+    static Image* fromFile();
 };
