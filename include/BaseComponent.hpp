@@ -1,5 +1,7 @@
 #include <list>
-
+//TODO:
+//children access throw id / name
+//children search throw id / name
 class BaseComponent
 {
 public:
